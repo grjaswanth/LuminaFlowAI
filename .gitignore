@@ -1,13 +1,19 @@
-venv/
+# Python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+backend/venv/
+
+# Environment variables
 .env
 
-frontend/node_modules/
-frontend/.next/
+# Node
+node_modules/
 
-backend/__pycache__/
-
-.env.*
-logs/
-*.log
+# Next.js
+.next/
