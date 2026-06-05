@@ -25,9 +25,8 @@ app.add_middleware(
 )
 
 # Home route
-@app.get("/")
+@app.api_route("/", methods=["GET", "HEAD"])
 def home():
-
     return {
         "message": "LuminaFlow AI Backend Running"
     }
