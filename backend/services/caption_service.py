@@ -2,8 +2,13 @@ import random
 import google.generativeai as genai
 
 # Use the SAME Gemini API key that works in image_service.py
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
 genai.configure(
-    api_key="AIzaSyB13aVzPa4ZABmVvFpVyf7s-UzwtKX9CR0"
+    api_key=os.getenv("GEMINI_API_KEY")
 )
 
 model = genai.GenerativeModel(
